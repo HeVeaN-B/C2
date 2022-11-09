@@ -1,0 +1,434 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#151719">
+  <meta name="name" content="panel.booter.cc">
+  <meta name="description" content="The control panel of BOOTER.CC.">
+  <meta name="keywords" content="cp,acp,control,control panel,admin, admin control, admin control panel, admin panel,panel,client panel,booter.cc,stress,ddos,booter,ddos attack,bitcoin,btc,annonymous,free,cheap,attack,launch">
+  <meta itemprop="name" content="panel.booter.cc">
+  <meta itemprop="description" content="The control panel of BOOTER.CC.">
+  <meta itemprop="image" content="/static/banner.png">
+  <meta property="og:url" content="https://panel.booter.cc">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BOOTER.CC - Control panel">
+  <meta property="og:description" content="The control panel of BOOTER.CC.">
+  <meta property="og:image" content="/static/square.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BOOTER.CC - Control panel">
+  <meta name="twitter:description" content="The control panel of BOOTER.CC.">
+  <meta name="twitter:image" content="/static/square.png">
+  <link rel="manifest" href="/manifest.json">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css" rel="stylesheet">
+  <title>Dashboard | BOOTER.CC</title>
+  <link href="/static/css/2.9368708c.chunk.css" rel="stylesheet">
+  <style data-styled-components=""></style>
+  <style data-emotion="css-global" data-s=""></style>
+  <style data-emotion="css" data-s=""></style>
+ </head>
+ <body>
+  <noscript>
+   You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root">
+   <div class="css-1rla0ro">
+    <header class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-1utvfno-MuiPaper-root-MuiAppBar-root">
+     <div class="MuiToolbar-root MuiToolbar-regular css-1oclpog-MuiToolbar-root">
+      <a class="MuiBox-root css-dtw560" sx="[object Object]" href="/">
+       <svg id="Capa_1" enable-background="new 0 0 512 512" height="40" viewbox="0 0 512 512" width="40" xmlns="http://www.w3.org/2000/svg">
+        <g>
+         <g>
+          <path d="m405.882 321.13c20.914 9.144 42.952 15.716 65.699 19.531 7.625 1.279 15.218 3.475 22.637 6.645 14.597 6.236 21.79 23.016 15.493 37.586-7.779 17.999-29.157 28.611-53.441 34.815-31.039 7.93-62.766 4.995-90.533-6.765z" fill="#ACADFF"></path>
+         </g>
+         <g>
+          <path d="m510.09 363.717c-2.742-7.117-8.309-13.181-15.871-16.411-7.419-3.169-15.013-5.365-22.637-6.645-22.747-3.816-44.785-10.387-65.699-19.531l-40.144 91.812c18.279 7.741 38.274 11.657 58.659 11.168 5.73-11.538 10.666-23.445 14.776-35.654 5.093-15.13 19.416-25.242 35.368-24.641 14.223.536 26.357.319 35.548-.098z" fill="#5658DD"></path>
+         </g>
+         <g>
+          <path d="m271.935 248.453c-19.357-12.096-37.226-26.573-53.22-43.191-5.361-5.57-11.462-10.597-18.267-14.93-13.389-8.525-31.3-4.986-39.769 8.439-10.462 16.584-7.147 40.22 1.447 63.764 10.984 30.094 31.322 54.621 56.708 70.896z" fill="#ACADFF"></path>
+         </g>
+         <g>
+          <path d="m218.715 205.262c-5.361-5.57-11.462-10.597-18.267-14.93-6.921-4.407-15.048-5.582-22.457-3.843 4.414 8.183 12.31 21.749 23.884 37.742 10.222 14.124 8.986 33.695-3.287 46.079-.081.082-.163.164-.245.246l-21.405 21.405c11.052 16.811 25.397 30.892 41.895 41.47l53.102-84.978c-19.357-12.096-37.226-26.573-53.22-43.191z" fill="#5658DD"></path>
+         </g>
+         <g>
+          <path d="m228.501 137.044c44.752 44.847 43.78 117.851-1.02 162.651l-23.068 23.068c.001.002 43.48 93.705 176.316 95.546 53.471-93.676 40.249-215.065-39.699-295.014-73.453-73.453-184.38-86.568-271.234-39.377l19.028 35.699c43.979-26.316 101.82-20.511 139.677 17.427z" fill="#E9E9FF"></path>
+         </g>
+         <g>
+          <path d="m216.524 109.703c0-21.307 17.273-38.58 38.58-38.58 2.437 0 4.818.236 7.13.669-62.268-24.216-132.991-20.175-192.438 12.126l19.028 35.699c42.509-25.435 97.964-20.856 135.81 13.735-5.078-6.533-8.11-14.735-8.11-23.649z" fill="#e4e4e4"></path>
+         </g>
+         <g>
+          <path d="m15.863 14.273c-12.327 4.296-18.836 17.772-14.54 30.098 2.293 6.579 5.334 12.684 8.993 18.253 21.088 32.09 33.844 68.688 37.273 106.933.595 6.637 2.008 13.309 4.301 19.888 4.297 12.327 17.772 18.836 30.099 14.539 15.365-5.356 25.5-22.382 32.182-42.086 18.501-54.56-4.804-115.051-56.167-141.146-14.536-7.385-29.333-10.944-42.141-6.479z" fill="#ACADFF"></path>
+         </g>
+         <g>
+          <path d="m412.078 276.972c-4.512-56.033-28.184-110.813-71.048-153.677-15.517-15.517-32.71-28.33-50.991-38.461-12.93 62.716 50.343 71.986 39.462 122.362-13.104 60.665 47.943 81.807 82.577 69.776z" fill="#ACADFF"></path>
+         </g>
+         <g>
+          <path d="m286.677 320.136c-28.187 8.824-64.384 16.013-82.264 2.626l-5.445 5.445c-39.229 39.229-39.229 102.833 0 142.062 39.229 39.229 102.833 39.229 142.062 0 15.866-15.866 29.088-33.371 39.699-51.962-31.124-10.918-44.702-44.867-50.625-72.696-4.179-19.634-24.269-31.472-43.427-25.475z" fill="#ACADFF"></path>
+         </g>
+         <g>
+          <path d="m198.967 328.208c-39.229 39.229-39.229 102.832 0 142.062 28.728 28.728 70.518 36.39 106.244 23.043-107.271-36.786-100.799-170.55-100.799-170.55z" fill="#5658DD"></path>
+         </g>
+         <g>
+          <g>
+           <g>
+            <path d="m214.247 408.301c-1.308 0-2.632-.342-3.837-1.061-3.557-2.123-4.72-6.728-2.597-10.284l5.072-8.499c2.123-3.558 6.725-4.72 10.284-2.597 3.557 2.123 4.72 6.728 2.597 10.284l-5.072 8.499c-1.404 2.353-3.893 3.658-6.447 3.658z" fill="#595959"></path>
+           </g>
+           <g>
+            <path d="m302.708 461.096c-1.309 0-2.633-.342-3.837-1.062-3.557-2.123-4.72-6.727-2.596-10.283l5.073-8.499c2.121-3.558 6.727-4.723 10.283-2.596 3.557 2.123 4.719 6.727 2.596 10.283l-5.073 8.499c-1.403 2.353-3.892 3.658-6.446 3.658z" fill="#595959"></path>
+           </g>
+          </g>
+          <g>
+           <g>
+            <path d="m64.4 69.486c-1.271 0-2.561-.323-3.741-1.005l-21.015-12.124c-3.588-2.069-4.818-6.656-2.748-10.244 2.069-3.588 6.654-4.821 10.244-2.748l21.016 12.124c3.588 2.069 4.818 6.656 2.748 10.244-1.389 2.408-3.911 3.753-6.504 3.753z" fill="#5658DD"></path>
+           </g>
+           <g>
+            <path d="m76.587 164.104c-1.081 0-2.179-.234-3.22-.73-3.739-1.781-5.328-6.256-3.547-9.996l10.431-21.904c1.781-3.74 6.255-5.329 9.996-3.547 3.739 1.781 5.328 6.256 3.547 9.996l-10.431 21.904c-1.285 2.698-3.973 4.277-6.776 4.277z" fill="#5658DD"></path>
+           </g>
+           <g>
+            <path d="m63.908 109.515c-3.197 0-6.16-2.061-7.159-5.274-1.23-3.955.979-8.159 4.934-9.389l8.854-2.754c3.955-1.235 8.159.979 9.389 4.934s-.979 8.159-4.934 9.389l-8.854 2.754c-.742.23-1.492.34-2.23.34z" fill="#5658DD"></path>
+           </g>
+          </g>
+         </g>
+        </g>
+       </svg></a>
+      <hr class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical MuiDivider-flexItem css-fxoktx-MuiDivider-root">
+      <h6 class="MuiTypography-root MuiTypography-subtitle1 css-1626ywe-MuiTypography-root">BOOTER.CC</h6>
+      <button class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-65pafw-MuiButtonBase-root-MuiButton-root" tabindex="0" type="button">Menu<span class="MuiButton-endIcon MuiButton-iconSizeMedium css-1gnd1fd-MuiButton-endIcon">
+        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1gnihbt-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="ChevronDownIcon">
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+         </svg>
+        </svg></span></button>
+      <div class="MuiBox-root css-i9gxme"></div>
+      <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1r20def-MuiButtonBase-root-MuiIconButton-root" tabindex="0" type="button">
+       <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-17ceore-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="SunIcon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+         <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+        </svg>
+       </svg></button>
+      <div class="MuiBox-root css-1a11ric">
+       <div class="MuiAvatar-root MuiAvatar-rounded css-q1arm6-MuiAvatar-root">
+        <img src="/static/user-chen_simmons.png" class="MuiAvatar-img css-1pqm26d-MuiAvatar-img">
+       </div>
+       <div class="MuiBox-root css-1su2swm">
+        <div>
+         <span class="MuiTypography-root MuiTypography-caption css-182rzns-MuiTypography-root">User</span>
+         <h6 class="MuiTypography-root MuiTypography-subtitle2 css-jzax2e-MuiTypography-root"></h6>
+        </div>
+        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-jo4c34-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="ChevronDownIcon">
+         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+         </svg>
+        </svg>
+       </div>
+      </div>
+     </div>
+    </header>
+    <div class="MuiDrawer-root MuiDrawer-docked css-tgzazt-MuiDrawer-docked">
+     <div class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-7cd5x2-MuiPaper-root-MuiDrawer-paper">
+      <div class="MuiBox-root css-ayshjd" style="display: flex; flex: 1 1 0%; overflow: hidden auto;">
+       <div class="MuiBox-root css-4nuj1i">
+        <ul class="MuiList-root css-1mk9mw3-MuiList-root">
+         <ul class="MuiList-root css-gy82au-MuiList-root">
+          <li><button class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-fullWidth MuiButtonBase-root css-ho1bcu-MuiButtonBase-root-MuiButton-root" tabindex="0" type="button"><span class="MuiButton-startIcon MuiButton-iconSizeMedium css-gcc2o7-MuiButton-startIcon">
+             <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-17ceore-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="DashboardIcon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewbox="0 0 24 24" fill="currentColor">
+               <path fill="currentColor" d="M21,17H3V5H21M21,3H3A2,2 0 0,0 1,5V17A2,2 0 0,0 3,19H8V21H16V19H21A2,2 0 0,0 23,17V5A2,2 0 0,0 21,3Z"></path>
+              </svg>
+             </svg></span><p class="MuiTypography-root MuiTypography-inherit css-wa2du2-MuiTypography-root">Dashboard</p><span class="MuiButton-endIcon MuiButton-iconSizeMedium css-1gnd1fd-MuiButton-endIcon">
+             <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-egnern-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="ChevronDownIcon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+               <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+             </svg></span></button></li>
+          <div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-pwcg7p-MuiCollapse-root" style="min-height: 0px;">
+           <div class="MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper">
+            <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner">
+             <ul class="MuiList-root css-gy82au-MuiList-root">
+              <li><a class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-fullWidth MuiButtonBase-root css-f82qfg-MuiButtonBase-root-MuiButton-root" tabindex="0" href="/dashboard/">Attack Hub</a></li>
+              <li><a class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-fullWidth MuiButtonBase-root css-rn1clm-MuiButtonBase-root-MuiButton-root" tabindex="0" href="/dashboard/tools">Tools</a></li>
+             </ul>
+            </div>
+           </div>
+          </div>
+         </ul>
+         <ul class="MuiList-root css-gy82au-MuiList-root">
+          <li><button class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-fullWidth MuiButtonBase-root css-1ubitlw-MuiButtonBase-root-MuiButton-root" tabindex="0" type="button"><span class="MuiButton-startIcon MuiButton-iconSizeMedium css-gcc2o7-MuiButton-startIcon">
+             <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-17ceore-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="ShoppingCartIcon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+               <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+              </svg>
+             </svg></span><p class="MuiTypography-root MuiTypography-inherit css-6gww65-MuiTypography-root">Subscription</p><span class="MuiButton-endIcon MuiButton-iconSizeMedium css-1gnd1fd-MuiButton-endIcon">
+             <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-egnern-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="ChevronRightIcon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+               <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+              </svg>
+             </svg></span></button></li>
+         </ul>
+         <ul class="MuiList-root css-gy82au-MuiList-root">
+          <li><button class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-fullWidth MuiButtonBase-root css-1ubitlw-MuiButtonBase-root-MuiButton-root" tabindex="0" type="button"><span class="MuiButton-startIcon MuiButton-iconSizeMedium css-gcc2o7-MuiButton-startIcon">
+             <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-17ceore-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="CogIcon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+               <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
+              </svg>
+             </svg></span><p class="MuiTypography-root MuiTypography-inherit css-6gww65-MuiTypography-root">Account</p><span class="MuiButton-endIcon MuiButton-iconSizeMedium css-1gnd1fd-MuiButton-endIcon">
+             <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-egnern-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="ChevronRightIcon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+               <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+              </svg>
+             </svg></span></button></li>
+         </ul>
+         <li><a class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-fullWidth MuiButtonBase-root css-1ubitlw-MuiButtonBase-root-MuiButton-root" tabindex="0" href="/telegram" target="_target"><span class="MuiButton-startIcon MuiButton-iconSizeMedium css-gcc2o7-MuiButton-startIcon">
+            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-17ceore-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="TelegramIcon">
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewbox="0 0 24 24">
+              <path d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z"></path>
+             </svg>
+            </svg></span><p class="MuiTypography-root MuiTypography-inherit css-6gww65-MuiTypography-root">Telegram</p><span class="MuiButton-endIcon MuiButton-iconSizeMedium css-1gnd1fd-MuiButton-endIcon">
+            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1nsym50-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="ExternalLinkIcon">
+             <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+             </svg>
+            </svg></span></a></li>
+        </ul>
+        <div class="MuiBox-root css-i9gxme"></div>
+        <hr class="MuiDivider-root MuiDivider-fullWidth css-djc496-MuiDivider-root">
+        <div class="MuiBox-root css-zoser8">
+         <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-fl7dxt-MuiButtonBase-root-MuiIconButton-root" tabindex="0" type="button">
+          <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-17ceore-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="ChevronLeftIcon">
+           <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+           </svg>
+          </svg></button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="css-lxy6f9">
+     <div>
+      <div class="sc-htpNat wYbPc">
+       <div class="sc-bxivhb kEjfVS">
+        <div color="#ECEDED" class="sk-fade-in-quarter-second sk-spinner ball-beat" style="color: rgb(236, 237, 237);">
+         <div></div>
+         <div></div>
+         <div></div>
+        </div>
+       </div>
+      </div>
+      <div class="sc-ifAKCX sWWsi">
+       <div class="MuiBox-root css-43d1iw">
+        <div class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root">
+         <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-1ln0vny-MuiGrid-root">
+          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1em9ut6-MuiGrid-root">
+           <h4 class="MuiTypography-root MuiTypography-h4 css-bq88us-MuiTypography-root">Attack hub</h4>
+          </div>
+          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-17dw2p9-MuiGrid-root">
+           <div class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root css-1p6toh7-MuiPaper-root-MuiCard-root">
+            <div class="MuiBox-root css-ox0m8v">
+             <div class="MuiBox-root css-f0oijv">
+              <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-m4zfqt-MuiAvatar-root">
+               <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-e6dllw-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="UsersIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor">
+                 <path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"></path>
+                </svg>
+               </svg>
+              </div>
+             </div>
+             <div>
+              <span class="MuiTypography-root MuiTypography-overline css-1fagarf-MuiTypography-root">Users</span>
+              <h6 class="MuiTypography-root MuiTypography-h6 css-1clx3vk-MuiTypography-root">0</h6>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-17dw2p9-MuiGrid-root">
+           <div class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root css-1p6toh7-MuiPaper-root-MuiCard-root">
+            <div class="MuiBox-root css-ox0m8v">
+             <div class="MuiBox-root css-f0oijv">
+              <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-m4zfqt-MuiAvatar-root">
+               <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-e6dllw-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="BootsIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor">
+                 <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,10.84 21.79,9.69 21.39,8.61L19.79,10.21C19.93,10.8 20,11.4 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.6,4 13.2,4.07 13.79,4.21L15.4,2.6C14.31,2.21 13.16,2 12,2M19,2L15,6V7.5L12.45,10.05C12.3,10 12.15,10 12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12C14,11.85 14,11.7 13.95,11.55L16.5,9H18L22,5H19V2M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12H16A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8V6Z"></path>
+                </svg>
+               </svg>
+              </div>
+             </div>
+             <div>
+              <span class="MuiTypography-root MuiTypography-overline css-1fagarf-MuiTypography-root">Boots</span>
+              <h6 class="MuiTypography-root MuiTypography-h6 css-1clx3vk-MuiTypography-root">0</h6>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-17dw2p9-MuiGrid-root">
+           <div class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root css-1p6toh7-MuiPaper-root-MuiCard-root">
+            <div class="MuiBox-root css-ox0m8v">
+             <div class="MuiBox-root css-f0oijv">
+              <div class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-m4zfqt-MuiAvatar-root">
+               <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-e6dllw-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="GunIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+                 <path d="M7,5H23V9H22V10H16A1,1 0 0,0 15,11V12A2,2 0 0,1 13,14H9.62C9.24,14 8.89,14.22 8.72,14.56L6.27,19.45C6.1,19.79 5.76,20 5.38,20H2C2,20 -1,20 3,14C3,14 6,10 2,10V5H3L3.5,4H6.5L7,5M14,12V11A1,1 0 0,0 13,10H12C12,10 11,11 12,12A2,2 0 0,1 10,10A1,1 0 0,0 9,11V12A1,1 0 0,0 10,13H13A1,1 0 0,0 14,12Z"></path>
+                </svg>
+               </svg>
+              </div>
+             </div>
+             <div>
+              <span class="MuiTypography-root MuiTypography-overline css-1fagarf-MuiTypography-root">Ongoing</span>
+              <h6 class="MuiTypography-root MuiTypography-h6 css-1clx3vk-MuiTypography-root">0</h6>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1em9ut6-MuiGrid-root">
+           <div class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root css-1pd41vx-MuiPaper-root-MuiCard-root">
+            <div class="MuiCardHeader-root css-14aai2r-MuiCardHeader-root">
+             <div class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content">
+              <span class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-x4x3a7-MuiTypography-root">Panel</span>
+             </div>
+             <div class="MuiCardHeader-action css-sgoict-MuiCardHeader-action">
+              <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-undefined css-11lq3yg-MuiGrid-root">
+               <button class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButtonBase-root css-1wv0ddl-MuiButtonBase-root-MuiButton-root" tabindex="0" type="button">NEW ATTACK</button>
+              </div>
+             </div>
+            </div>
+            <hr class="MuiDivider-root MuiDivider-fullWidth css-djc496-MuiDivider-root">
+            <div class="MuiCardContent-root css-c8g0wl-MuiCardContent-root">
+             <div class="MuiBox-root css-15sstve">
+              <div class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root css-km4f9m-MuiPaper-root-MuiCard-root">
+               <span class="MuiTypography-root MuiTypography-overline css-1fagarf-MuiTypography-root">Subscibed</span>
+               <h6 class="MuiTypography-root MuiTypography-h6 css-hmcsk-MuiTypography-root">No</h6>
+              </div>
+              <div class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root css-km4f9m-MuiPaper-root-MuiCard-root">
+               <span class="MuiTypography-root MuiTypography-overline css-1fagarf-MuiTypography-root">Concurrents</span>
+               <h6 class="MuiTypography-root MuiTypography-h6 css-hmcsk-MuiTypography-root">0/0</h6>
+              </div>
+              <div class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root css-km4f9m-MuiPaper-root-MuiCard-root">
+               <span class="MuiTypography-root MuiTypography-overline css-1fagarf-MuiTypography-root">Boots today</span>
+               <h6 class="MuiTypography-root MuiTypography-h6 css-hmcsk-MuiTypography-root">0/0</h6>
+              </div>
+              <div class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root css-km4f9m-MuiPaper-root-MuiCard-root">
+               <span class="MuiTypography-root MuiTypography-overline css-1fagarf-MuiTypography-root">Maximum Time</span>
+               <h6 class="MuiTypography-root MuiTypography-h6 css-hmcsk-MuiTypography-root">0</h6>
+              </div>
+              <div class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root css-km4f9m-MuiPaper-root-MuiCard-root">
+               <span class="MuiTypography-root MuiTypography-overline css-1fagarf-MuiTypography-root">API access</span>
+               <h6 class="MuiTypography-root MuiTypography-h6 css-hmcsk-MuiTypography-root">No</h6>
+              </div>
+             </div>
+             <div class="MuiBox-root css-r30v08">
+              <div>
+               <div class="MuiBox-root css-ayshjd">
+                <table class="MuiTable-root css-1i53vnk-MuiTable-root">
+                 <thead class="MuiTableHead-root css-yfglys-MuiTableHead-root">
+                  <tr class="MuiTableRow-root MuiTableRow-head css-18qx59p-MuiTableRow-root">
+                   <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-8s9x0q-MuiTableCell-root" scope="col">Date</th>
+                   <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-8s9x0q-MuiTableCell-root" scope="col">Destination</th>
+                   <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-8s9x0q-MuiTableCell-root" scope="col">Status</th>
+                   <th class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-8s9x0q-MuiTableCell-root" scope="col">Action</th>
+                  </tr>
+                 </thead>
+                 <tbody class="MuiTableBody-root css-apqrd9-MuiTableBody-root"></tbody>
+                </table>
+               </div>
+               <div class="Toastify"></div>
+              </div>
+              <hr class="MuiDivider-root MuiDivider-fullWidth css-djc496-MuiDivider-root">
+              <div class="MuiTablePagination-root css-79vu8-MuiTablePagination-root">
+               <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-11bfvty-MuiToolbar-root-MuiTablePagination-toolbar">
+                <div class="MuiTablePagination-spacer css-1psng7p-MuiTablePagination-spacer"></div>
+                <p class="MuiTablePagination-selectLabel css-1fowxi6-MuiTablePagination-selectLabel" id="mui-422151837">Rows per page:</p>
+                <div class="MuiInputBase-root MuiInputBase-colorPrimary MuiTablePagination-input MuiSelect-root css-rnp1pc-MuiInputBase-root-MuiTablePagination-select">
+                 <div tabindex="0" role="button" aria-expanded="false" aria-haspopup="listbox" class="MuiTablePagination-select MuiSelect-select MuiSelect-standard MuiInputBase-input css-1evsqt9-MuiSelect-select-MuiInputBase-input" aria-labelledby="mui-422151837 mui-612237143" id="mui-612237143">
+                  5
+                 </div>
+                 <input aria-hidden="true" tabindex="-1" class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput" value="5">
+                 <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTablePagination-selectIcon MuiSelect-icon MuiSelect-iconStandard css-j41lnu-MuiSvgIcon-root-MuiSelect-icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="ArrowDropDownIcon">
+                  <path d="M7 10l5 5 5-5z"></path>
+                 </svg>
+                </div>
+                <p class="MuiTablePagination-displayedRows css-1nmj00g-MuiTablePagination-displayedRows">0-0 of 0</p>
+                <div class="MuiTablePagination-actions">
+                 <button class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1agfz9p-MuiButtonBase-root-MuiIconButton-root" tabindex="-1" type="button" disabled aria-label="Go to previous page" title="Go to previous page">
+                  <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-17ceore-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="KeyboardArrowLeftIcon">
+                   <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path>
+                  </svg></button>
+                 <button class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1agfz9p-MuiButtonBase-root-MuiIconButton-root" tabindex="-1" type="button" disabled aria-label="Go to next page" title="Go to next page">
+                  <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-17ceore-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="KeyboardArrowRightIcon">
+                   <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path>
+                  </svg></button>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <footer class="MuiBox-root css-0">
+      <div class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root">
+       <div class="MuiBox-root css-qxond0">
+        <p class="MuiTypography-root MuiTypography-body2 css-19s0m9k-MuiTypography-root">© 2021 BOOTER.CC</p>
+        <div class="MuiBox-root css-i9gxme"></div>
+        <a class="MuiTypography-root MuiTypography-body2 MuiLink-root MuiLink-underlineAlways css-y6pkwo-MuiTypography-root-MuiLink-root" href="https://booter.cc/tos" target="_blank">Terms of Service</a>
+        <a class="MuiTypography-root MuiTypography-body2 MuiLink-root MuiLink-underlineHover css-1qrtuak-MuiTypography-root-MuiLink-root" href="https://booter.cc/about" target="_blank">About Us</a>
+       </div>
+      </div>
+     </footer>
+    </div>
+   </div>
+  </div> 
+  <div role="presentation" class="MuiModal-root MuiModal-hidden MuiPopover-root css-1b83a4y-MuiModal-root-MuiPopover-root" aria-hidden="true">
+   <div aria-hidden="true" class="MuiBackdrop-root MuiBackdrop-invisible css-g3hgs1-MuiBackdrop-root-MuiModal-backdrop" style="opacity: 0; visibility: hidden;"></div>
+   <div tabindex="0" data-test="sentinelStart"></div>
+   <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper css-10gjoo8-MuiPaper-root-MuiPopover-paper" tabindex="-1" style="opacity: 0; transform: scale(0.75, 0.5625); visibility: hidden;">
+    <ul class="MuiList-root MuiList-padding css-h4y409-MuiList-root">
+     <li class="MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-divider css-1w4inql-MuiListItem-root">
+      <div class="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root">
+       <div class="MuiAvatar-root MuiAvatar-rounded css-1pnc1vg-MuiAvatar-root">
+        <img src="/static/user-chen_simmons.png" class="MuiAvatar-img css-1pqm26d-MuiAvatar-img">
+       </div>
+      </div>
+      <div class="MuiListItemText-root css-tlelie-MuiListItemText-root">
+       <span class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-1od8o3-MuiTypography-root"></span>
+       <p class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-103h6kr-MuiTypography-root">天空</p>
+      </div></li>
+     <li>
+      <ul class="MuiList-root css-1mk9mw3-MuiList-root">
+       <li class="MuiListSubheader-root MuiListSubheader-gutters css-40tgvn-MuiListSubheader-root">App Settings</li>
+       <li class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1neb8nz-MuiListItem-root"><span class="MuiSwitch-root MuiSwitch-sizeMedium css-1uyf9z-MuiSwitch-root"><span class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root Mui-checked css-1lmwzkh-MuiButtonBase-root-MuiSwitch-switchBase"><input class="MuiSwitch-input PrivateSwitchBase-input css-mraihx" type="checkbox" value="" checked><span class="MuiSwitch-thumb css-1n51o3s-MuiSwitch-thumb"></span></span><span class="MuiSwitch-track css-o9rv9m-MuiSwitch-track"></span></span><p class="MuiTypography-root MuiTypography-body2 css-1thjkrd-MuiTypography-root">Dark Mode</p></li>
+      </ul></li>
+     <a class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-divider MuiListItem-button css-gnntgp-MuiButtonBase-root-MuiListItem-root" tabindex="0" href="/dashboard/settings">
+      <div class="MuiListItemIcon-root css-1my4woy-MuiListItemIcon-root">
+       <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-17ceore-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="UserIcon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewbox="0 0 20 20" fill="currentColor">
+         <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+        </svg>
+       </svg>
+      </div>
+      <div class="MuiListItemText-root css-tlelie-MuiListItemText-root">
+       <span class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-1od8o3-MuiTypography-root">Account</span>
+      </div></a>
+     <div class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button css-ydfu2r-MuiButtonBase-root-MuiListItem-root" tabindex="0" role="button">
+      <div class="MuiListItemIcon-root css-1my4woy-MuiListItemIcon-root">
+       <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-17ceore-MuiSvgIcon-root" focusable="false" viewbox="0 0 24 24" aria-hidden="true" data-testid="LogoutIcon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor">
+         <path d="M14.08,15.59L16.67,13H7V11H16.67L14.08,8.41L15.5,7L20.5,12L15.5,17L14.08,15.59M19,3A2,2 0 0,1 21,5V9.67L19,7.67V5H5V19H19V16.33L21,14.33V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5C3,3.89 3.89,3 5,3H19Z"></path>
+        </svg>
+       </svg>
+      </div>
+      <div class="MuiListItemText-root css-tlelie-MuiListItemText-root">
+       <span class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-1od8o3-MuiTypography-root">Log out</span>
+      </div>
+     </div>
+    </ul>
+   </div>
+   <div tabindex="0" data-test="sentinelEnd"></div>
+  </div>
+ </body>
+</html>
